@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Degust pizzaria</title>
-    <!-- css -->
+  
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- bootstrap css -->
+  
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- FONT-AWESOME -->
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 
@@ -21,7 +21,7 @@
             <img src="assets/img/logo.png"alt="Descrição da imagem" class="img-lg">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- icone -->
+               
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse nav-list" id="navbarNavAltMarkup">
@@ -35,7 +35,7 @@
             </div>
         </div>
     </nav>
-    <!-- end nav -->
+  
 
     <section class="content-banner">
         <div class="container">
@@ -48,7 +48,7 @@
 
         </div>
     </section>
-     <!-- end section -->
+    
 
      <section class="section-contact">
         <div class="container">
@@ -63,7 +63,7 @@
         </div>
 
     </section>
-    <!-- end section -->
+    
 
 
     <section class="container content-card" id="servicos">
@@ -94,7 +94,7 @@
             </div>
         </div>
     </section>
-    <!-- end section -->
+    
 
     <section class="container content-plans" id="planos">
         <div class="row">
@@ -130,7 +130,7 @@
             <div class="col-md-6 col-lg-4 text-center mb-3">
                 <div class="card card-plans">
                     <i class="fas fa-map"></i>
-                    <a href="https://www.google.com/maps/dir/-18.7287288,-44.4605541/degust/@-18.7422941,-44.4715734,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xa862fc34a8a1e9:0xd7d9278e76cd683a!2m2!1d-44.4359729!2d-18.7548977?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="text-decoration: none; color: inherit;">
+                   
                     <h4>MAPA</h4>
                     <h5><span>Clique para chegar!</span></h5>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d30226.013046849836!2d-44.47157338101976!3d-18.742294073240764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-18.7287288!2d-44.460554099999996!4m5!1s0xa862fc34a8a1e9%3A0xd7d9278e76cd683a!2sdegust!3m2!1d-18.7548977!2d-44.435972899999996!5e0!3m2!1spt-BR!2sbr!4v1729608451362!5m2!1spt-BR!2sbr"  
@@ -151,7 +151,7 @@
         </div>
 
     </section>
-    <!-- end section -->
+   
 
     <section class="container content-contact-form" id="contato">
         <div class="row">
@@ -165,32 +165,39 @@
             <div class="col-lg-6 d-sm-none d-lg-inline-block">
                 <img src="assets/img/img-contato.png" class="w-100" alt="imagem-form">
             </div>
-            <!--Form-->
-            <div class="col-lg-6">
+              
+               <div class="col-lg-6">
                 <div class="col-12">
-                    <form action="/contato" method="post" role="form" class="form_contato" name="form_contato">
+                    <form action="#" method="post" role="form" class="form_contato" name="form_contato">
                         <div class="row form-group">
                             <div class="col-md-6 mt-2">
                                 <label for="id_nome">Nome</label>
-                                <input required="" type="text" id="id_nome" name="nome" placeholder="Digite seu nome"
-                                    value="" class="form-control ">
+                                <input type="text" id="nome" name="nome" placeholder="Digite seu nome"
+                                    class="form-control" required>
                             </div>
                             <div class="col-md-6 mt-2">
                                 <label for="id_telefone">Telefone</label>
-                                <input required="" type="email" id="id_telefone" name="telefone"
-                                    placeholder="Digite seu telefone" value="" class="form-control ">
+                                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone"
+                                    class="form-control" required>
                             </div>
                         </div>
                         <div class="row form-group">
-                            <div class="col-md-12">
-                                <label for="message">Mensagem</label>
-                                <textarea required="" id="id_mensagem" name="mensagem" cols="30" rows="7"
-                                    placeholder="Digite aqui sua mensagem ..." class="form-control "></textarea>
+                            <div class="col-md-12 mt-2">
+                                <label for="id_email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Digite seu email"
+                                    class="form-control">
                             </div>
                         </div>
                         <div class="row form-group">
-                            <div class="col-md-12 mt-4 ">
-                                <button class="btn btn-dark">ENVIAR</button>
+                            <div class="col-md-12 mt-2">
+                                <label for="id_texto">O que deseja</label>
+                                <textarea id="texto" name="texto" cols="100" rows="7" placeholder="Digite aqui sua mensagem ..."
+                                    class="form-control" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-12 mt-4">
+                                <button type="button" onclick="botaowhatssap()" class="btn btn-click">Enviar</button>
                             </div>
                         </div>
                     </form>
@@ -199,7 +206,7 @@
         </div>
 
     </section>
-    <!-- end section -->
+   
 
     <section class="section-contact">
         <div class="container">
@@ -208,12 +215,12 @@
                     <p>Entre em contato e acompanhe as novidades</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <a href="#" class="btn btn-dark">CLIQUE AQUI</a>
+                    <a href="https://www.instagram.com/degustpizzaria/" class="btn btn-dark">CLIQUE AQUI</a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- end section -->
+   
 
     <footer class="content-footer">
         <div class="container">
@@ -221,55 +228,95 @@
                 <div class="col-lg-4 p-5">
                     <h2>CONTATO</h2>
                     <hr>
-                    <a class="contact" target="_blank" href="https://wa.me/55119999-9999"> <i
-                            class="fab fa-whatsapp mr-2"></i> +55 (11) 90000-000 </a>
+                    <a class="contact" target="_blank" href="https://wa.me/5538998427070?text="> <i
+                            class="fab fa-whatsapp mr-2"></i> Whatssap </a>
                     <br>
-                    <a class="contact" target="_blank" href="mailto:seuemail@gmail.com"> <i
-                            class="fas fa-envelope-open-text mr-2"></i> gym@gmail.com </a>
+                    <a class="contact" target="_blank" href="https://www.instagram.com/degustpizzaria/"> <i
+                            class="fab fa-instagram mr-2"></i>Instagram </a>
+                            <br>
+                            <a class="contact" target="_blank" href="https://www.facebook.com/degustpizzaria2014.com.br/about?locale=pt_BR"> <i
+                                    class="fab fa-facebook-f mr-2"></i>Facebook </a>
                 </div>
                 <div class="col-lg-4 p-5">
                     <h2>SOBRE</h2>
                     <hr>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                    <p>A Degust Pizzaria, em Curvelo, MG, é conhecida por suas pizzas de alta qualidade e um ambiente acolhedor. Oferece pratos variados, como filé à parmegiana e tilápia, além de porções como fritas. Os clientes elogiam a comida e o espaço familiar </p>
                 </div>
                 <div class="col-lg-4 p-5 box-acess">
                     <h2>ACESSE</h2>
                     <hr>
                     <ul class="list-unstyled">
                         <a href="#home">
-                            <li>Home</li>
+                            <li>HOME</li>
                         </a>
                         <a href="#servicos">
-                            <li>Serviços</li>
+                            <li>CARDAPIO</li>
                         </a>
                         <a href="#planos">
-                            <li>Planos</li>
+                            <li>HORARIO</li>
                         </a>
                         <a href="#contato">
-                            <li>Contato</li>
+                            <li>CONTATO</li>
                         </a>
                     </ul>
                 </div>
-                <div class="col-12 text-center"> Copyright 2021 | Todos os direitos reservados</div>
+                <div class="col-12 text-center"> Copyright 2024 | Todos os direitos reservados</div>
             </div>
         </div>
     </footer>
-    <!-- end footer -->
+    
 
     <a href="#home" type="button" class="btn-topo" id="btn-topo">
         <i class="fas fa-arrow-up"></i>
     </a>
 
-    <!-- scripts -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-        crossorigin="anonymous"></script>
-    <!-- script nav -->
-    <script src="assets/js/script.js"></script>
+    
+
+    <script>
+        function botaowhatssap() {
+            var name = document.getElementById("nome").value;
+            var telef = document.getElementById("telefone").value;
+            var email = document.getElementById("email").value;
+            var texto = document.getElementById("texto").value;
+    
+          
+            if (name === "") {
+                alert("Por favor, escreva seu nome.");
+                return;
+            }
+    
+            if (telef === "") {
+                alert("Por favor, escreva seu telefone.");
+                return;
+            }
+    
+            if (texto === "") {
+                alert("Por favor, escreva o que deseja.");
+                return;
+            }
+    
+            var url = "https://wa.me/5538998427070?text="
+                + "Nome: " + encodeURIComponent(name) + "%0a"
+                + "Telefone: " + encodeURIComponent(telef) + "%0a"
+                + "Email: " + encodeURIComponent(email) + "%0a"
+                + "O que deseja: " + encodeURIComponent(texto) + "%0a";
+    
+            window.open(url, '_blank').focus();
+        }
+    </script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+    <script src="path/to/your/javascript.js"></script>
+
+
+<script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
