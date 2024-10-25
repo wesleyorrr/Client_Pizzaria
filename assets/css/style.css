@@ -15,7 +15,7 @@
 
 .btn-click{
     color: white !important;
-    background-color: #f8493c !important;
+    background-color: #ca5262 !important;
 }
 
 .img-lg {
@@ -126,6 +126,11 @@
 .content-banner h3 {
     display: flex;
     color: 	#2a9a42;
+    text-shadow: 
+    -1px -1px 0 white,  
+     1px -1px 0 white,  
+    -1px  1px 0 white,  
+     1px  1px 0 white;
     font-size: 20px ;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -147,6 +152,7 @@
     color: #1C1C1C;
     font-size: 25px;
 }
+
 
 /**********************
 content card - serviços 
